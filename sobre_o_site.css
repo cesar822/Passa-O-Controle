@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+}
+
+ul:not(div ul, header ul) {
+    padding: 10px 0;
+}
+
+li:not(div li, header li), #lista-gigante li {
+    margin: 5px 0;
+}
+
+ul:not(div ul, header ul), #lista-gigante {
+    border: solid black 3px;
+    margin: auto 5rem;
+    background-color: #191645;
+}
+
+#lista-gigante {
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+}
