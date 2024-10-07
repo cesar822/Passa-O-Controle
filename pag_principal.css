@@ -1,0 +1,94 @@
+/*Posts (ou imagens com texto bacana aparecendo por cima :]*/
+
+nav img {
+    height: 200px;
+    width: 360px;
+}
+
+.posts-principais {
+    display: inline-block;
+    position: relative;
+}
+
+.posts-principais img {
+    margin: auto 20px;
+}
+
+.posts-principais a {
+    font-size: 24px;
+    transition: all 0.2s linear;
+    position: absolute;
+    top: -10px;
+    left: 23px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    height: 201px;
+    width: 360px;
+    opacity: 0;
+    text-align: center;
+}
+
+.posts-principais a:hover {
+    transition: all 0.3s linear;
+    opacity: 1;
+    top: 2px;
+    background-color: #191645d0;
+}
+
+/*Gente Bonita (personagens)*/
+
+.gif-personagens {
+    height: 70px;
+    position: absolute;
+}
+
+.gif-personagens:hover {
+    cursor: pointer;
+}
+
+#spamton {
+    top: 60px;
+    right: 200px;
+}
+
+#sonic {
+    left: 200px;
+    top: 368px;
+}
+
+/*Responsividade*/
+
+@media (max-width: 480px) {
+
+    .posts-principais img{
+        width: 70vw;
+        height: 40vw;
+    }
+
+    .posts-principais a {
+        position: absolute;
+        top: 0.15rem;
+        left: 1.39rem;
+        width: 70vw;
+        height: 40vw;
+        opacity: 1;
+        text-align: center;
+        background-color: #191645d0;
+        margin: 0;
+        font-size: 3.5vw;
+    }
+
+    .gif-personagens {
+        width: auto;
+        height: 40px;
+        position: static;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+    d
+}
+
+@media (min-width: 801px) {
+    d   
+}

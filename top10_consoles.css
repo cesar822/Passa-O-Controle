@@ -1,0 +1,115 @@
+/*h2, h3*/
+
+h2 {
+    margin: 4.375rem 0 2.5rem 2.5rem;
+    text-align: left;
+}
+
+h3 {
+    margin-top: 40px;
+}
+
+img {
+    max-height: 40vh;
+}
+
+strong {
+    color: #191645;
+}
+
+.num-destacado {
+    color: #43C6AC;
+    text-decoration:underline;
+}
+
+/*Capas dos jogos*/
+
+.capa_jogos span{
+    display: inline-block;
+    margin: 20px 40px;
+}
+
+.capa_jogos img{
+    height: auto;
+    max-height: 40vh;
+    width: 16vw;
+    border-color: black;
+}
+
+.capa_jogos p{
+    margin: 10px;
+    text-align: center;
+}
+
+caption {
+    font-size: 1.25rem;
+    font-family: "Inter";
+}
+
+/*Tabela*/
+
+table{
+    border-style: solid;
+    border-collapse: collapse;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.125rem;
+}
+
+thead, tbody, tfoot {
+    border-style: solid;
+    border-width: 1px 1px;
+    border-color: black;
+    font-family: "Inter";
+}
+
+thead, tfoot{
+    background-color: #191645;
+    color: white;
+}
+
+td, th {
+    padding: 0.19rem 0.625rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    img:not(.capa_jogos img) {
+        max-width: 70vw;
+    }
+
+    caption {
+        font-size: 3vw;
+    }
+
+    .capa_jogos {
+        display: block;
+    }
+
+    .capa_jogos img {
+        width: 30vw;
+    }
+
+    h2{
+        margin-left: 1rem;
+    }
+
+    table{
+        margin: 1.25rem 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    thead, tbody, tfoot {
+        border: none;
+    }
+
+    td, th, tfoot a{
+        font-size: 3vw;
+    }
+
+    footer {
+        margin: 0;
+    }
+}

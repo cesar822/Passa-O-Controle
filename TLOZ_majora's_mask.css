@@ -1,0 +1,105 @@
+#img-principal {
+    height: 468px;
+}
+
+/*Imagens flutuantes*/
+
+.img-flutuando-a-esquerda, .img-flutuando-a-direita {
+    height: 250px;
+}
+
+.img-flutuando-a-direita {
+    float: right;
+    margin: 0 50px 80px 40px;
+}
+
+.img-flutuando-a-esquerda {
+    float: left;
+    margin: 20px 40px 80px 50px;
+}
+
+/*Imagem do Deku Link*/
+
+#deku-link { 
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+#txt-abaixo-imagem {
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*Tabela*/
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    position: relative;
+}
+
+td img {
+    height: 6.25rem;
+    width: 6.25rem;
+    margin: 1px 3px;
+}
+
+td p {
+    transition: all 0.2s linear;
+    position: absolute;
+    top: 0.25rem;
+    left: 0.4rem;
+    text-align: center;
+    opacity: 0;
+    box-sizing: border-box;
+    padding: 20px 5px;
+    height: 6.25rem;
+    width: 6.25rem;
+    margin: 0;
+}
+
+td p:hover {
+    transition: all 0.3s linear;
+    opacity: 1;
+    background-color: #191645dd;
+    color: white;
+}
+
+@media (max-width: 480px) {
+
+    img:not(td img, #logo) {
+        height: 37vw !important;
+        width: 70vw;
+        margin: 0 !important;
+    }
+
+    td img {
+        height: 11vw;
+        width: 11vw;
+        margin: 0;
+    }
+
+    td p {
+        height: 11vw;
+        width: 11vw;
+        font-size: 0.7rem;
+        top: 0.23rem;
+        left: 0.2rem;
+        padding: 0;
+    }
+
+    video {
+        width: 70vw;
+        height: 39.38vw;
+    }
+
+    .img-flutuando-a-direita, .img-flutuando-a-esquerda {
+        float:none;
+    }
+}

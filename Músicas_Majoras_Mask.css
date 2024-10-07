@@ -1,0 +1,28 @@
+h2 {
+    clear: both;
+    text-align: left;
+    margin-left: 50px;
+}
+
+img:not(#logo){
+    float: right;
+    margin: 0 50px 80px 40px;
+    height: 250px;
+    width: 457px;
+}
+
+@media (max-width: 480px) {
+    img:not(td img, #logo) {
+        height: 37vw !important;
+        width: 64vw;
+        margin: 0 !important;
+        float: none;
+    }
+
+    video {
+        width: 70vw;
+        height: 39.38vw;
+    }
+}
+    
+

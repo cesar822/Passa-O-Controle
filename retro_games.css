@@ -1,0 +1,18 @@
+img:not(#logo) {
+    height: 40vh;
+    width: 40vw;
+}
+
+@media (max-width: 480px) {
+    img:not(#logo) {
+        height: 60vw;
+        width: 80vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+    img:not(#logo) {
+        height: 60vw;
+        width: 80vw;
+    }
+}
