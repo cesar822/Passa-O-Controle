@@ -73,7 +73,10 @@ td, th {
     padding: 0.19rem 0.625rem;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 1000px) {
+    .capa_jogos {
+        display: block;
+    }
 
     img:not(.capa_jogos img) {
         max-width: 70vw;
@@ -83,33 +86,57 @@ td, th {
         font-size: 3vw;
     }
 
-    .capa_jogos {
-        display: block;
-    }
-
-    .capa_jogos img {
-        width: 30vw;
-    }
-
     h2{
         margin-left: 1rem;
     }
 
     table{
-        margin: 1.25rem 0;
-        border-left: none;
-        border-right: none;
-    }
-
-    thead, tbody, tfoot {
-        border: none;
-    }
-
-    td, th, tfoot a{
-        font-size: 3vw;
+        margin: 1.25rem 1rem;
     }
 
     footer {
         margin: 0;
+    }
+
+    td, th, tfoot a{
+        font-size: 2vw;
+        padding: 1vw;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .capa_jogos img {
+        width: 30vw;
+    }
+
+    td, th, tfoot a{
+        font-size: 2.5vw;
+        padding: 1vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+
+    .capa_jogos img {
+        width: 20vw;
+        max-height: 50vw;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1024px){
+
+    .capa_jogos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .capa_jogos img {
+        width: 20vw;
+        max-height: 27vw;
+    }
+
+    thead, tbody, tfoot {
+        border-style: solid;
     }
 }

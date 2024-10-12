@@ -71,18 +71,20 @@ td p:hover {
     color: white;
 }
 
-@media (max-width: 480px) {
-
-    img:not(td img, #logo) {
-        height: 37vw !important;
-        width: 70vw;
-        margin: 0 !important;
+@media (max-width: 1024px) {
+    .img-flutuando-a-direita, .img-flutuando-a-esquerda {
+        float:none;
     }
 
     td img {
         height: 11vw;
         width: 11vw;
         margin: 0;
+    }
+
+    video {
+        width: 70vw;
+        height: 39.38vw;
     }
 
     td p {
@@ -94,12 +96,27 @@ td p:hover {
         padding: 0;
     }
 
-    video {
-        width: 70vw;
-        height: 39.38vw;
+    #img-principal {
+        width: 75vw;
+        height: auto;
     }
 
-    .img-flutuando-a-direita, .img-flutuando-a-esquerda {
-        float:none;
+    img:not(td img, #logo, #img-principal) {
+        height: auto;
+        width: 60vw;
+        margin: 0;
+    }
+
+    h1 {
+        margin: 5vw;
+    }
+
+    h2:not(header h2) {
+        margin-top: 15vw !important;
+    }
+
+    h3 {
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 }

@@ -19,7 +19,7 @@ nav img {
     transition: all 0.2s linear;
     position: absolute;
     top: -10px;
-    left: 23px;
+    left: 22.5px;
     box-sizing: border-box;
     padding: 10px 15px;
     height: 201px;
@@ -38,27 +38,26 @@ nav img {
 /*Gente Bonita (personagens)*/
 
 .gif-personagens {
-    height: 70px;
-    position: absolute;
-}
-
-.gif-personagens:hover {
+    width: auto;
+    height: 40px;
     cursor: pointer;
-}
-
-#spamton {
-    top: 60px;
-    right: 200px;
-}
-
-#sonic {
-    left: 200px;
-    top: 368px;
 }
 
 /*Responsividade*/
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
+    .posts-principais a {
+        position: absolute;
+        top: 0.15rem;
+        left: 1.39rem;
+        opacity: 1;
+        text-align: center;
+        background-color: #191645d0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
 
     .posts-principais img{
         width: 70vw;
@@ -66,29 +65,42 @@ nav img {
     }
 
     .posts-principais a {
-        position: absolute;
-        top: 0.15rem;
-        left: 1.39rem;
         width: 70vw;
         height: 40vw;
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+
+    .posts-principais img{
+        width: 70vw;
+        height: 40vw;
+        max-width: 390px;
+        max-height: 224px;
+    }
+
+    .posts-principais a {
+        width: 70vw;
+        height: 40vw;
+        max-width: 390px;
+        max-height: 224px;
         opacity: 1;
-        text-align: center;
-        background-color: #191645d0;
-        margin: 0;
         font-size: 3.5vw;
     }
+}
 
-    .gif-personagens {
-        width: auto;
-        height: 40px;
-        position: static;
+@media (min-width: 801px) and (max-width: 1024px){
+    .posts-principais img{
+        width: 49vw;
+        height: 28vw;
     }
-}
 
-@media (min-width: 481px) and (max-width: 800px) {
-    d
-}
-
-@media (min-width: 801px) {
-    d   
+    .posts-principais a {
+        top: 0.15rem;
+        left: 1.4rem;
+        width: 49vw;
+        height: 28vw;
+        font-size: 3vw;
+    }
 }

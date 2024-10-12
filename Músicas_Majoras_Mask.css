@@ -11,7 +11,7 @@ img:not(#logo){
     width: 457px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
     img:not(td img, #logo) {
         height: 37vw !important;
         width: 64vw;
