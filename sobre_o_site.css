@@ -12,7 +12,7 @@ li:not(div li, header li), #lista-gigante li {
 
 ul:not(div ul, header ul), #lista-gigante {
     border: solid black 3px;
-    margin: auto 5rem;
+    margin: auto 10rem;
     background-color: #191645;
 }
 
@@ -20,4 +20,14 @@ ul:not(div ul, header ul), #lista-gigante {
     text-align: justify;
     display: flex;
     justify-content: center;
+}
+
+img:not(#logo) {
+    height: 15vw;
+    float: left;
+    margin: auto 2vw auto 5vw;
+}
+
+h2 {
+    clear: both;
 }
